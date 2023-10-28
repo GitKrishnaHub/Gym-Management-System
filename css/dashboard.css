@@ -1,0 +1,106 @@
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  
+}
+
+html::-webkit-scrollbar-track {
+  background: #001;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4a54cf;
+  border-radius: 20px;
+}
+
+
+.home-section{
+    position: relative;
+    background: #fff;
+    height: 90vh;
+    left: 290px;
+    width: calc(100% - 290px);
+    transition: all 0.2s ease;
+  }
+
+  .sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+  .home-section .iconbox .material {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+  .cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 80px;
+  }
+ .card{
+    position: relative;
+    background-color:#4a54cf !important;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .card:hover{
+    background:#b473d7 !important;
+  }
+  .cardbox .card .numbers{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .cardbox .card .cardname{
+    color: black !important;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .cardbox .card .iconbox{
+    font-size: 3.5rem;
+    color: black !important;
+    /* color: red  ; */
+  }
+  #piechart{
+    /* display: inline-flex; */
+    width: 50%; 
+    height: 90vh;
+    margin: 0;  
+    /* border: 1px solid #fff; */
+}
+#piechart1{
+  /* display:inline-flex ; */
+  width: 50%;
+  height: 90vh;
+  margin:0;
+  /* border: 1px solid #fff; */
+}
+.piechart{
+  display: inline-flex;
+  /* position: relative; */
+  background: #fff;
+  height: 91.5vh;
+  left: 295px;
+  width: 100%;
+  transition: all 0.2s ease;
+}

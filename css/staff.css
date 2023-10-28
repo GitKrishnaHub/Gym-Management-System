@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition:all .4s linear;
+    -o-transition: all .4s linear;
+  }
+  
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  
+}
+
+html::-webkit-scrollbar-track {
+  background: #001;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4a54cf;
+  border-radius: 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    position: relative;
+    background: #E4E9F7;
+    height: 91vh;
+    left: 290px;
+    width: calc(100% - 290px);
+    transition: all 0.2s ease;
+}
+h1{
+  margin: 0 0 0 34%;
+  padding: 20px;
+  color: lightcoral;
+}
+.sidebar.close ~ .main{
+    left: 78px;
+    width: calc(100% - 78px);
+}
+.main form{
+    width: 100%;
+    height: 92vh ;
+    padding: 15px;
+    background: #27282c;
+    /* box-shadow: 0 5px 10px #000000; */
+}
+  .main form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+  .main form .row .col,
+  .main form .row .cols{
+    flex: 1 1 350px;
+    padding: 10px ;
+    margin-bottom: 10px;
+    
+}
+.main form .row .col h4,
+.main form .row .cols h4{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  
+  }
+  .main form .row .col .input-box{
+    margin: 10px auto;
+    
+  }
+  .main form .row .cols .input-box{
+    margin: 18px auto;
+  }
+  .main form .row .col .input-box .control-label,
+  .main form .row .cols .input-box .control-label{
+    margin-bottom: 5px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+   
+  }
+  span{
+    color: #fff;
+  }
+  .main form .row .col .input-box select,
+  .main form .row .cols .input-box select{
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .main form .row .col .input-box label,
+  .main form .row .cols .input-box label
+{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px; 
+ 
+}
+.main form .row .col .input-box input,
+.main form .row .cols .input-box input{
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    padding: 10px 15px;
+    font-size: 15px;
+    
+    border: 1px solid #000;
+  }
+  .main form .row .col .input-box input:focus,
+  .main form .row .cols .input-box input:focus{
+    border: 1px solid #262626;
+  }
+  .button{
+  
+    display:flex;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.1em;
+    margin: 20px 0 0 35%;
+    padding: 10px 30px;
+    background: #27282c;
+    border:1px solid #444;
+    border-color: var(--clr);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .button:hover{
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    letter-spacing: 0.25em;
+  }
+  .button::before{
+    position:relative;
+    inset: 2px;
+    background:#27282c;
+  }
+  .button i{
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  .button i::before{
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    width: 10px;
+    left: 80%;
+    height: 5px;
+    background: #27282c;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    border:2px solid var(--clr);
+  }
+  .button:hover i::before{
+    width: 20px;
+    left: 20%;
+  }
+  .button i::after{
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    width: 10px;
+    left: 20%;
+    height: 5px;
+    background: #27282c;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    border:2px solid var(--clr);
+  }
+  .button:hover i::after{
+    width: 20px;
+    left: 80%;
+  }
+  .button:active{
+    background: #1e9bff;
+  }
+  

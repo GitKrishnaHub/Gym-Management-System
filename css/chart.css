@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.piechart{
+    display: flex;
+    position: relative;
+    background: #090f1f;
+    height: 91.5vh;
+    left: 295px;
+    width: calc(100% - 295px);
+    transition: all 0.2s ease;
+  }
+  .sidebar.close ~ .piechart{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+#piechart{
+    display: inline-flex;
+    width: 50%; 
+    height: 90vh;
+    margin: 0;  
+    border: 1px solid #fff;
+}
+#piechart1{
+  display:inline-flex ;
+  width: 50%;
+  height: 90vh;
+  margin:0;
+  border: 1px solid #fff;
+}
