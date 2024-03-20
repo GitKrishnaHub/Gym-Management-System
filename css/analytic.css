@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+  background: #090f1f;
+} */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  
+}
+
+html::-webkit-scrollbar-track {
+  background: #001;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #4a54cf;
+  border-radius: 20px;
+}
+.ana{
+    display: flex;
+    position: relative;
+    background: #fff;
+    height: 91vh;
+    left: 295px;
+    width: calc(100% - 295px);
+    transition: all 0.2s ease;
+  }
+  .sidebar.close ~ .ana{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+
+#myChart{
+    /* margin:10px 0; */
+    height: 91vh;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.analytic{
+    width: 100%;
+    height: 91vh;
+    /* border: 1px solid black; */
+}
